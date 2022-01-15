@@ -9,6 +9,11 @@ const mockdata = [
     endTime: "Sat Jan 15 2022 05:30:00 GMT+0530"
   },
   {
+    title: "Good grief standup",
+    startTime: "Sat Jan 15 2022 5:00:00 GMT+0530",
+    endTime: "Sat Jan 15 2022 05:50:00 GMT+0530"
+  },
+  {
     title: "Daily Standup",
     startTime: "Sat Jan 15 2022 17:00:00 GMT+0530",
     endTime: "Sat Jan 15 2022 20:00:00 GMT+0530"
@@ -61,8 +66,8 @@ mockdata.forEach((dataItem) => {
     ${startHour < 10 ? "0" + startHour : startHour}:${
     startMins < 10 ? "0" + startMins : startMins
   } -
-    ${endHour < 10 ? "0" + endHour : "" + endHour}:${
-    endMins < 10 ? "0" + endMins : "" + endMins
+    ${endHour < 10 ? "0" + endHour : endHour}:${
+    endMins < 10 ? "0" + endMins : endMins
   }
   `;
 
